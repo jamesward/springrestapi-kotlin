@@ -2,16 +2,11 @@ package springrestapi
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
-import org.springframework.nativex.hint.TypeHint
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
 data class Employee(val id: String, val fullName: String, val location: String, val jobTitle: String)
 
-@TypeHint(typeNames = [
-    "org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer\$DependsOnDatabaseInitializationPostProcessor",
-    "org.springframework.boot.context.properties.ConfigurationPropertiesBinder\$Factory",
-])
 @SpringBootApplication
 @RestController
 class WebApp {

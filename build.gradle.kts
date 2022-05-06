@@ -4,7 +4,7 @@ plugins {
     kotlin("plugin.spring")                    version "1.6.20"
     id("org.springframework.boot")             version "2.6.6"
     id("io.spring.dependency-management")      version "1.0.11.RELEASE"
-    id("org.springframework.experimental.aot") version "0.10.4"
+    id("org.springframework.experimental.aot") version "0.11.4"
 }
 
 repositories {
